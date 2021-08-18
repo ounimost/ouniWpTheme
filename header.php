@@ -40,7 +40,7 @@
 </head>
 
 <body>
-    <!-- ヘッダ　-->
+    <!-- ヘッダ -->
     <header class="mb-5">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="<?php echo home_url(); ?>">

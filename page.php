@@ -1,4 +1,4 @@
-<?php get_header();　?>
+<?php get_header(); ?>
 
 <main class="container">
 	<div class="bg-light">

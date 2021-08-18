@@ -15,9 +15,7 @@ function post_has_archive( $args, $post_type ) {
   global $wp_rewrite;
   if ( 'post' === $post_type && ! is_null( $wp_rewrite ) ) {
     $archive_slug = 'blog';
-    // Setting 'has_archive' ensures get_post_type_archive_template() returns an archive.php template.
     $args['has_archive'] = $archive_slug;
-    // We have to register rewrite rules, because WordPress won't do it for us unless $args['rewrite'] is true.
     $archive_slug = $wp_rewrite->root . $archive_slug;
     add_rewrite_rule( "{$archive_slug}/?$", "index.php?post_type=$post_type", 'top' );
     $feeds = '(' . trim( implode( '|', $wp_rewrite->feeds ) ) . ')';
@@ -46,7 +44,7 @@ function getPostViews($postID){
         add_post_meta($postID, $count_key, ‘0’);
         return "0 Views";
     }
-    return $count　. " Views";
+    return $count. " Views";
 }
 function setPostViews($postID) {
     $count_key = ‘post_views_count’;

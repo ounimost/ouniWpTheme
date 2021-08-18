@@ -8,7 +8,7 @@
 		<h1 class="topTitle text-center pb-5">新着の記事</h1>
 		<div class="container">
 			<div class="row">
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();　?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="col-md-3 col-sm-6 col-xs-12 mb-5">
 							<figure class="newPostFigure">
 								<?php the_post_thumbnail(array( 224, 126 ), array( 'class' => 'img-fluid' ) ); ?>
@@ -19,7 +19,7 @@
 								<h4 class="lead"><a href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a></h4>
 							</div>
 					</div>
-			<?php endwhile; endif;　?>
+			<?php endwhile; endif; ?>
 			</div>
 		</div>
 		<div class="otherPost"><a class="otherPostButton" href="https://ouni.work/blog/">ほかの記事</a></div>
