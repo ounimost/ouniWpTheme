@@ -214,7 +214,11 @@
 				<?php endforeach; ?>
 			</dl>
 			<div class="otherPost"><a class="otherPostButton" href="https://ouni.work/blog/category/python-machine-learning/">ほかの記事</a></div>
-		</div>	
+		</div>
+		
+		<div class="col p-5 m-3 bg-light">
+			<h1 class="topTitle text-center">Coming soon.</h1>
+		</div>
 			
 	</div>
 	
