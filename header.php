@@ -77,8 +77,9 @@
                 <a class="dropdown-item" href="https://ouni.work/blog/category/wordpress/">WordPresss</a>
                 <a class="dropdown-item" href="https://ouni.work/blog/category/essay/">エッセイ</a>
                 <a class="dropdown-item" href="https://ouni.work/blog/category/gadget/">ガジェット</a>
-                <a class="dropdown-item" href="https://ouni.work/blog/category/portfolio/">ポートフォリオサイトのつくりかた</a>
-				  	  <a class="dropdown-item" href="https://ouni.work/blog/category/reading/">読書</a>
+                <a class="dropdown-item" href="https://ouni.work/blog/category/portfolio/">ポートフォリオサイトのつくりかた</a>
+				  	    <a class="dropdown-item" href="https://ouni.work/blog/category/reading/">読書</a>
+                <a class="dropdown-item" href="https://ouni.work/blog/category/python-machine-learning/">Pythonで機会学習</a>
               </div>
             </li>
             <li class="nav-item"><a class="nav-link" href="https://ouni.work/portfolio/">ポートフォリオ</a></li>
