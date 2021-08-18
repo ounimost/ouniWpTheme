@@ -186,6 +186,30 @@
 				<?php endforeach; ?>
 			</dl>
 			<div class="otherPost"><a class="otherPostButton" href="https://ouni.work/blog/category/gadget/">ほかの記事</a></div>
+		</div>
+
+		<!-- Pythonの記事 -->
+		<div class="col p-5 m-3 bg-light">
+			<h1 class="topTitle text-center">Pythonで機械学習</h1>
+			<p class="newPostDate text-center pb-3">Pythonを使って機械学習してみます。</p>
+			<div class="mb-5">
+				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/pythonMachineLearning.jpg" />
+			</div>
+			<?php
+				$newarrival = get_posts(array(
+					'posts_per_page' => 6, 		// 表示件数指定
+					'category' => 18 					// カテゴリID指定
+				));
+			?>
+			<dl class="categoryPost">
+					<?php foreach($newarrival as $post): setup_postdata($newarrival);?>
+					<div>
+							<dt class="categoryPostDate"><?php the_time('Y.m.d'); ?></dt>
+							<dd class="categoryPostTitle"><a class="categoryPostTitle" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a></dd>
+					</div>
+				<?php endforeach; ?>
+			</dl>
+			<div class="otherPost"><a class="otherPostButton" href="https://ouni.work/blog/category/python-machine-learning/">ほかの記事</a></div>
 		</div>	
 			
 	</div>
