@@ -83,6 +83,7 @@
               </div>
             </li>
             <li class="nav-item"><a class="nav-link" href="https://ouni.work/portfolio/">ポートフォリオ</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://ouni.work/free-learning/">無料学習サイト集</a></li>
             <li class="nav-item"><a class="nav-link" href="https://ouni.work/contact/">お問い合わせ</a></li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
