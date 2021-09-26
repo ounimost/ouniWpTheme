@@ -84,9 +84,9 @@ dl.categoryPost {
 
 /* 日付 */
 .categoryPostDate {
-  float: left;
   color: #b4b4b4;
-  font-size: 11px;
+  font-size: x-small;
+  font-weight: 400;
   letter-spacing: 0.08em;
   padding-top: 4px;
 }
@@ -103,7 +103,6 @@ a.categoryPostTitle:hover {
   text-decoration: none;
 }
 dd.categoryPostTitle {
-  margin-left: 80px;
 }
 
 /* ほかの記事ボタン */
