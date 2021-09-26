@@ -2,7 +2,7 @@
 Theme Name: ouniWpTheme
 */
 body {
-  background-color: gainsboro;
+  background-color: #eee;
 }
 
 p {
@@ -56,36 +56,23 @@ li.nav-item {
   text-decoration: none;
 }
 
-/* 日付 */
-.newPostDate {
-  color: #b4b4b4;
+/* 記事の情報（カテゴリ・日付） */
+p#new-post-info {
   font-size: x-small;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 0px;
+  margin-top: 3px;
 }
-
-/* Category */
-.newPostCategory {
-  padding: 8px 12px;
-  left: auto;
-  background-color: rgb(232, 232, 232);
-  position: absolute;
-  display: inline-block;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  z-index: 1;
-  top: 0px;
-}
-.newPostCategory > a {
+#new-post-category > a {
   transition: color 0.5s;
-  font-size: x-small;
-  font-weight: bold;
-  color: dimgray;
-}
-.newPostCategory > a:hover {
-  color: silver;
   text-decoration: none;
+  color: dimgray;
+  margin-right: 10px;
+}
+#new-post-category > a:hover {
+  color: silver;
+}
+time#new-post-date {
+  color: silver;
+  letter-spacing: 0.08em;
 }
 
 /* ---------------------------------

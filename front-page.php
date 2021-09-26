@@ -13,9 +13,13 @@
 							<figure class="newPostFigure">
 								<?php the_post_thumbnail(array( 224, 126 ), array( 'class' => 'img-fluid' )); ?>
 							</figure>
-							<p class="newPostCategory"><a href=""><?php the_category(', '); ?></a></p>
 							<div class="px-2">
-								<time class="newPostDate" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+								<p id="new-post-info">
+									<!-- カテゴリを表示する -->
+									<span id="new-post-category"><?php the_category(', '); ?></span>
+									<!-- 投稿日時をを表示する -->
+									<time id="new-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+								</p>
 								<h4 class="lead"><a href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a></h4>
 							</div>
 					</div>
