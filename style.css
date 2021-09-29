@@ -75,6 +75,12 @@ time#new-post-date {
   letter-spacing: 0.08em;
 }
 
+/* トップページのカテゴリのサブタイトル */
+.front-category-sub {
+  color: dimgray;
+  font-size: small;
+}
+
 /* ---------------------------------
           カテゴリの投稿 
 ------------------------------------*/

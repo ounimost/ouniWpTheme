@@ -37,9 +37,7 @@
 		<!-- Unityカテゴリの記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">Unityでゲーム開発</h1>
-			<p class="newPostDate text-center pb-3"
-			   >UnityやDoozyUIなどのゲーム開発について</p
-				>
+			<p class="front-category-sub text-center pb-3">UnityやDoozyUIなどのゲーム開発について</p>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/unity.jpg" />
 			</div>
@@ -63,9 +61,7 @@
 		<!-- WordPressカテゴリの記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">WordPressでサイト制作</h1>
-			<p class="newPostDate text-center pb-3"
-			   >UnityやDoozyUIなどのゲーム開発について</p
-				>
+			<p class="front-category-sub text-center pb-3">WordPressのTipsや自作テーマのつくり方について</p>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/wordpress.jpg" />
 			</div>
@@ -93,8 +89,7 @@
 		<!-- ポートフォリオのつくりかたの記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">ポートフォリオサイトのつくりかた</h1>
-			<p class="newPostDate text-center pb-3"
-			   >HTMLとCSSでシンプルなポートフォリをサイトをつくります</p
+			<p class="front-category-sub text-center pb-3">HTMLとCSSでシンプルなポートフォリオサイトをつくります</p
 				>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/portfoliio.jpg" />
@@ -119,7 +114,7 @@
 		<!-- エッセイの記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">エッセイ</h1>
-			<p class="newPostDate text-center pb-3">技術的な観点で日々のできごとを綴っています</p>
+			<p class="front-category-sub text-center pb-3">日々のできごとを綴ります</p>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/essey.jpg" />
 			</div>
@@ -147,7 +142,7 @@
 		<!-- 読書の記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">読んだ本</h1>
-			<p class="newPostDate text-center pb-3">本の感想を簡単に書いています。</p>
+			<p class="front-category-sub text-center pb-3">本の感想を簡単に書いています。</p>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/book.jpg" />
 			</div>
@@ -171,7 +166,7 @@
 		<!-- ガジェットの記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">ガジェット</h1>
-			<p class="newPostDate text-center pb-3">お気に入りのガジェットなどを紹介します。</p>
+			<p class="front-category-sub text-center pb-3">お気に入りのガジェットなどを紹介します。</p>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/gadgets.jpg" />
 			</div>
@@ -199,7 +194,7 @@
 		<!-- Pythonの記事 -->
 		<div class="col p-5 m-3 bg-light">
 			<h1 class="topTitle text-center">Pythonで機械学習</h1>
-			<p class="newPostDate text-center pb-3">Pythonを使って機械学習してみます。</p>
+			<p class="front-category-sub text-center pb-3">Pythonを使って機械学習してみます。</p>
 			<div class="mb-5">
 				<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/pythonMachineLearning.jpg" />
 			</div>
