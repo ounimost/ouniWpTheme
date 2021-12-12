@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div>
-ここは表示されません。
-</div>
+<main>
+  error. this is index.php.
+</main>
 
 <?php get_footer(); ?>

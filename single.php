@@ -1,27 +1,34 @@
+<!------------------------------------------------>
+<!-- 投稿ページ -->
+<!------------------------------------------------>
 <?php get_header(); ?>
 
-<main class="container">
-	<div class="bg-light">
+<main class="main-single">
+  <?php while (have_posts()) : ?>
+    
+    <div class="content-single">
+      <!-- 投稿を取得 -->
+      <?php the_post(); ?>
 
-  <?php if(have_posts()): while(have_posts()) : the_post(); ?>
-		
-		<div class="postTitle">
-			<h1 class="postTitleHeader"><?php the_title();?></h1>
-			<p><a href=""><?php the_category(', '); ?></a></p>
-			<time class="newPostDate" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>			
-		</div>
+      <!-- タイトル -->
+      <h1><?php echo the_title(); ?></h1>
 
-		<figure>
-			<?php the_post_thumbnail('full', array( 'class' => 'img-fluid' ) ); ?>
-		</figure>
-		
-		<div class="postContent">
-	    <?php the_content(); ?>			
-		</div>
-		
-  <?php endwhile; endif; ?>
+      <!-- カテゴリ -->
+      <span class="new-post-category"><?php the_category(', '); ?></span>
+      
+      <!-- 投稿日時 -->
+      <time class="new-post-date" datetime="<?php the_time('Y-m-d'); ?>">作成日：<?php the_time('Y.m.d'); ?></time>
+    </div>
 
-	</div>
+    <!-- アイキャッチ画像 -->
+    <?php the_post_thumbnail('full', array( 'class' => 'img-post' ) ); ?>
+    
+    <!-- 中身 -->
+    <div class="content-single">
+      <?php the_content(); ?>
+    </div>
+
+  <?php endwhile; ?>
 </main>
 
 <?php get_footer(); ?>

@@ -1,182 +1,71 @@
+@charset "UTF-8"
 /*
-Theme Name: Ouni Studio Theme (Old)
-Author: ouni
-Author URI: https://ouni.works
-Description: ouni studio の古いテーマです。削除予定。
-Version: 0.9.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Theme Name: Ouni Studio Theme
+Version : 0.9.0
+Author : ouni
+Author URI : https://ouni.works
 */
 
+/*---------------------------------------------------
+  全体
+-----------------------------------------------------*/
 body {
-  background-color: #eee;
+  background-color: whitesmoke;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 95%;
+  margin: 0px;
 }
-
 p {
   line-height: 1.8;
   margin-block-start: 0.7em;
   margin-block-end: 0.7em;
 }
-
-/* ---------------------------------
-          ヘッダ 
-------------------------------------*/
-header {
+h1 {
+  font-size: x-large;
 }
-li.nav-item {
-  font-size: small;
-  margin-left: 10px;
+h2 {
+  font-size: x-large;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
-.dropdown-item {
-  font-size: small;
-}
-/* ---------------------------------
-          新着の投稿 
-------------------------------------*/
-.newPostBlock {
-  background-color: white;
-}
-.topTitle {
-  font-size: 20px;
+h3 {
+  font-size: large;
+  margin-bottom: 10px;
 }
 
-.card-columns {
-}
-
-/* Category */
-.categoryPostBlock {
-  background-color: white;
-}
-.categoryPostFigure {
-  max-width: 130px;
-}
-
-/* タイトル */
-.lead > a {
+/*---------------------------------------------------
+  もくじ
+-----------------------------------------------------*/
+#toc_container {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
   color: dimgray;
-  font-size: small;
-  font-weight: bold;
-  transition: color 0.5s;
+  line-height: 2;
+  margin: 30px 0px;
 }
-.lead > a:hover {
-  color: silver;
+#toc_container a {
   text-decoration: none;
-}
-
-/* 記事の情報（カテゴリ・日付） */
-p#new-post-info {
-  font-size: x-small;
-  margin-top: 3px;
-}
-#new-post-category > a {
-  transition: color 0.5s;
-  text-decoration: none;
+  text-shadow: none;
   color: dimgray;
-  margin-right: 10px;
-}
-#new-post-category > a:hover {
-  color: silver;
-}
-time#new-post-date {
-  color: silver;
-  letter-spacing: 0.08em;
 }
 
-/* トップページのカテゴリのサブタイトル */
-.front-category-sub {
+/*---------------------------------------------------
+  問い合わせフォーム
+-----------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
   color: dimgray;
-  font-size: small;
+  padding: 10px;
 }
 
-/* ---------------------------------
-          カテゴリの投稿 
-------------------------------------*/
-dl.categoryPost {
-  width: auto;
-}
-
-/* 日付 */
-.categoryPostDate {
-  color: #b4b4b4;
-  font-size: x-small;
-  font-weight: 400;
-  letter-spacing: 0.08em;
-  padding-top: 4px;
-}
-
-/* タイトル */
-a.categoryPostTitle {
-  color: dimgray;
-  font-size: small;
-  font-weight: bold;
-  transition: color 0.5s;
-}
-a.categoryPostTitle:hover {
-  color: silver;
-  text-decoration: none;
-}
-dd.categoryPostTitle {
-}
-
-/* ほかの記事ボタン */
-div.otherPost {
-  text-align: center;
-}
-a.otherPostButton {
-  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  display: block;
-  margin: 15px auto;
-  max-width: 180px;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(141, 141, 141, 0.4) 0 0px 0px 1px inset;
-  font-size: small;
-}
-a.otherPostButton:hover {
-  color: rgba(255, 255, 255, 0.85);
-  box-shadow: rgba(141, 141, 141, 0.7) 0 0px 0px 40px inset;
-}
-
-/* ---------------------------------
-         投稿ページ 
-------------------------------------*/
-h1.postTitleHeader {
-  font-size: 1.4em;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  line-height: 1.5;
-}
-.postTitle {
-  padding: 5% 10%;
-}
-.postContent {
-  padding: 5% 10%;
-}
-.wp-block-image img {
-  object-fit: scale-down;
-  width: auto;
-  height: auto;
-}
-div.postContent > h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  line-height: 1.5;
-  margin-top: 5%;
-}
-div.postContent > h3 {
-  font-size: 1.1em;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  line-height: 1.5;
-  margin-top: 3%;
-}
+/*---------------------------------------------------
+  個別記事
+-----------------------------------------------------*/
 /* 蛍光マーカーの下線 */
 div.postContent > p > strong {
   background: linear-gradient(transparent 60%, #ffffa8 0%);
@@ -205,27 +94,354 @@ figcaption {
 }
 /* 画像 */
 .wp-block-image img {
-  filter: drop-shadow(2px 2px 2px rgba(160, 160, 160, 0.8));
+  /* filter: drop-shadow(2px 2px 2px rgba(160, 160, 160, 0.8)); */
 }
 
-/* ---------------------------------
-          固定ページ 
-------------------------------------*/
-.profile {
+/*---------------------------------------------------
+  リンクカード
+-----------------------------------------------------*/
+lkc-external-wrap {
+  box-shadow: none;
+}
+
+/*---------------------------------------------------
+  topページ
+-----------------------------------------------------*/
+.main-top {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: whitesmoke;
+}
+
+.category-container {
+  /* Grid表示する */
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-gap: 50px;
+  margin: 50px 0px;
+}
+@media (min-width: 600px) {
+  .category-container {
+    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+  }
+}
+@media (max-width: 599px) {
+  .category-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.category-post {
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+  color: dimgray;
+  background-color: whitesmoke;
 }
 
-/* ---------------------------------
-          フッター 
-------------------------------------*/
-footer {
-  background-color: #444444;
-  margin: 0px;
+.category-img {
+  width: 100%;
+}
+.category-post-date {
+  font-size: x-small;
+  color: silver;
+  letter-spacing: 0.08em;
+}
+a.category-post-title {
+  color: dimgray;
+  font-size: small;
+  font-weight: 700;
+  transition: color 0.5s;
+  display: inline-block;
+  margin-left: 10px;
+}
+a.category-post-title:hover {
+  color: silver;
+}
+
+/*---------------------------------------------------
+  投稿ページ
+-----------------------------------------------------*/
+.main-single {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: whitesmoke;
+}
+.content-single {
+  padding: 20px 10%;
+}
+.img-post {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 20px auto;
+}
+.wp-block-image img {
+  height: auto;
+}
+
+/*---------------------------------------------------
+  投稿一覧
+-----------------------------------------------------*/
+.content-area {
+  padding: 20px 4%;
+}
+.new-post-container {
+  /* Grid表示する */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.new-post {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+  color: dimgray;
+  background-color: whitesmoke;
+}
+.new-post:hover {
+  box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
+}
+h2.top-header {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: dimgray;
+}
+/* 記事のタイトル */
+h3.new-post-header {
+  margin: 10px;
+}
+h3.new-post-header > a {
+  color: dimgray;
+  font-size: small;
+  font-weight: 700;
+  transition: color 0.5s;
+  text-decoration: none;
+  display: inline-block;
+}
+h3.new-post-header > a:hover {
+  color: silver;
+}
+/* 記事の情報（カテゴリ・日付） */
+p.new-post-info {
+  font-size: x-small;
+  margin: 10px;
+}
+.new-post-category > a {
+  transition: color 0.5s;
+  text-decoration: none;
+  color: dimgray;
+  margin-right: 10px;
+}
+.new-post-category > a:hover {
+  color: silver;
+}
+time.new-post-date {
+  color: silver;
+  letter-spacing: 0.08em;
+}
+
+/*---------------------------------------------------
+  ボタン
+-----------------------------------------------------*/
+.center-btn {
+  text-align: center;
+  padding: 25px 0;
+  align-self: center;
+}
+.btn,
+a.btn,
+button.btn,
+input[type="submit" i] {
+  font-size: x-small;
+  font-weight: 900;
+  display: inline-block;
+  padding: 8px 30px 8px 27px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.1s;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+  color: dimgray;
+  background-color: whitesmoke;
+}
+.btn:hover,
+a.btn:hover,
+button.btn:hover,
+input[type="submit" i]:hover {
+  box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
+}
+.btn:active,
+a.btn:active,
+button.btn:active,
+input[type="submit" i]:active {
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
+}
+
+/*---------------------------------------------------
+  検索フォーム
+-----------------------------------------------------*/
+.search_container {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 4px 0px 4px 10px;
+  border-radius: 20px;
+  height: 2.2em;
+  width: 150px;
+  overflow: hidden;
+  background: white;
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
+}
+.search_container input[type="text"] {
+  border: none;
+  height: 2em;
+  font-size: small;
+  background: white;
+  box-shadow: none;
+  padding: 0px;
+  width: 110px;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"] {
+  font-family: FontAwesome;
+  font-size: 1em;
+  border: none;
+  background: none;
+  color: dimgray;
+  box-shadow: none;
+  padding: 0px;
+}
+.search_container ::-webkit-input-placeholder {
+  color: dimgray;
+}
+
+/*---------------------------------------------------
+  ページネーション
+-----------------------------------------------------*/
+.post-pagenation {
+  display: flex;
+  justify-content: center;
+}
+
+ul.page-numbers {
+  list-style-type: none;
+  font-size: small;
+  overflow: hidden;
+}
+
+ul.page-numbers > li {
+  width: 50px;
+  text-align: center;
+  float: left;
+  margin-right: 2px;
+  font-weight: 900;
+}
+
+ul.page-numbers > li > a {
+  text-decoration: none;
+  font-weight: 400;
+  color: gray;
+}
+ul.page-numbers > li > a:hover {
+  color: silver;
+}
+
+/*---------------------------------------------------
+  Header
+-----------------------------------------------------*/
+img.post-img:hover {
+  opacity: 0.5;
+}
+/* header bar */
+.site-header {
+  position: relative;
+  background-color: whitesmoke;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.site-header-wrapper {
+  padding: 0px 4%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .nav-wrapper {
+    display: flex;
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 599px) {
+  .nav-wrapper {
+    line-height: 0;
+  }
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+}
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
+nav {
+  color: dimgray;
+  background-color: whitesmoke;
+  margin: 20px 0px;
+  padding: 0px 25px;
+}
+/* nav */
+li.nav-item {
+  list-style: none;
+  line-height: initial;
+  margin: 15px 10px;
+}
+li.nav-item > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: x-small;
+  letter-spacing: 1.5px;
+  color: dimgray;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin: 0px 5px;
+
+  border-radius: 50px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+}
+li.nav-item > a:hover {
+  box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
+}
+li.nav-item > a:active {
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
+}
+
+/*---------------------------------------------------
+  Footer
+-----------------------------------------------------*/
+.site-footer {
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: 20px;
   padding: 10px;
 }
 .copyright {
-  margin: 0px;
-  color: whitesmoke;
-  font-size: small;
+  text-align: center;
+  color: dimgray;
+  font-size: x-small;
+  letter-spacing: 2px;
 }
