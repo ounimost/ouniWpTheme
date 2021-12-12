@@ -1,6 +1,11 @@
+@charset "UTF-8"
 /*
-Theme Name: ouniWpTheme
+Theme Name: Ouni Studio Theme
+Version : 0.9.0
+Author : ouni
+Author URI : https://ouni.works
 */
+
 body {
   background-color: #eee;
 }
