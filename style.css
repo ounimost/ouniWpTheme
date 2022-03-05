@@ -1,7 +1,7 @@
 /*
 Theme Name: Ouni Studio Theme
 Author: ouni
-Author URI: https://ouni.works/wptest
+Author URI: https://ouni.works
 Description: ouni studio テーマです。
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -393,11 +393,12 @@ img.post-img:hover {
 .logo {
   width: 60px;
   height: 60px;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .logo-img {
   width: 60px;
   height: 60px;
+  max-width: none;
 }
 nav {
   color: dimgray;
