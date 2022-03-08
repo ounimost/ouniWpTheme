@@ -362,6 +362,16 @@ ul.page-numbers > li > a:hover {
   color: silver;
 }
 
+span.page-numbers {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+  margin: 0px 5px;
+  border-radius: 50px;
+}
+
 /*---------------------------------------------------
   Header
 -----------------------------------------------------*/
