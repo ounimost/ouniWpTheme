@@ -336,15 +336,16 @@ input[type="submit" i]:active {
 
 ul.page-numbers {
   list-style-type: none;
-  font-size: small;
+  font-size: smaller;
   overflow: hidden;
+  padding: 0px;
 }
 
 ul.page-numbers > li {
   width: 50px;
   text-align: center;
   float: left;
-  margin: 10px;
+  margin: 5px;
   font-weight: 900;
 }
 
