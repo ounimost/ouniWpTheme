@@ -34,6 +34,9 @@ h3 {
   font-size: large;
   margin-bottom: 10px;
 }
+mark {
+  background-color: lightgoldenrodyellow;
+}
 
 /*---------------------------------------------------
   もくじ
