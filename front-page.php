@@ -6,14 +6,71 @@
 <main class="main-top">
 
   <!------------------------------------------------>
-  <!-- 新着の記事一覧 -->
+  <!-- WORKS一覧 -->
   <!------------------------------------------------>
   <div class="content-area">
-    <h2 class="top-header">新着記事</h2>
+    <h2 class="top-header">WORKS</h2>
+    <div class="new-post-container">
+
+        <div class="new-post">
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-site.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/portfolio'); ?>">ポートフォリオサイト</a></h3>
+          <p class="new-post-info">
+            <time class="new-post-date" datetime="2021-06-05">2021-06-05</time>
+            <br />
+            <span class="new-post-category">簡単なポートフォリオサイトです。作成方法の解説ブログも書いています。</span>
+            <br />
+            <time class="new-post-date">HTML/CSS/Bootstrap</time>
+          </p>
+        </div>
+
+        <div class="new-post">
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/ouni-wptheme.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/wptheme'); ?>">OUNI WordPressテーマ</a></h3>
+          <p class="new-post-info">
+            <time class="new-post-date" datetime="2021-10-22">2021-10-22</time>
+            <br />
+            <span class="new-post-category">このOUNIサイトでも利用しているWordPressテーマです。作成方法の解説ブログも書いています。</span>
+            <br />
+            <time class="new-post-date">WordPress/php/css</time>
+          </p>
+        </div>
+
+        <div class="new-post">
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/toeic-app.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/toeic-app'); ?>">TOEIC学習アプリ</a></h3>
+          <p class="new-post-info">
+            <time class="new-post-date" datetime="2022-07-21">2022-07-21</time>
+            <br />
+            <span class="new-post-category">TOEIC学習アプリです。TOEICの単語テストと出題文の翻訳テストができます。</span>
+            <br />
+            <time class="new-post-date">React/Tailwind</time>
+          </p>
+        </div>
+
+        <div class="new-post">
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/lognote-app.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/lognote'); ?>">LogNote</a></h3>
+          <p class="new-post-info">
+            <time class="new-post-date" datetime="2022-09-30">2022-09-30</time>
+            <br />
+            <span class="new-post-category">日々のログを管理するアプリです。Googleアカウントで認証すれば、日々のログを保存・編集・閲覧ができます。</span>
+            <br />
+            <time class="new-post-date">React/TypeScript/Tailwind/Firebase</time>
+          </p>
+        </div>
+    </div>
+  </div>
+
+  <!------------------------------------------------>
+  <!-- BLOG一覧 -->
+  <!------------------------------------------------>
+  <div class="content-area">
+    <h2 class="top-header">BLOG</h2>
     <div class="new-post-container">
 
       <!-- ページの最大表示投稿数を変更 -->
-      <?php query_posts('posts_per_page=7'); ?>
+      <?php query_posts('posts_per_page=8'); ?>
 
       <!-- 投稿の数だけ繰り返して処理する -->
       <?php while (have_posts()) : ?>
@@ -39,14 +96,12 @@
             <time class="new-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
           </p>
         </div>
-
       <?php endwhile; ?>
-
-      <!-- ブログ投稿一覧ページへのリンク -->
-      <div class="center-btn">
-        <a href="<?php echo home_url('/blog'); ?>" class="btn">▶　すべての記事</a>
-      </div>
-
+    </div>
+    
+    <!-- ブログ投稿一覧ページへのリンク -->
+    <div class="center-btn">
+        <a href="<?php echo home_url('/blog'); ?>" class="btn">show more</a>
     </div>
 
   </div>

@@ -119,6 +119,10 @@ lkc-external-wrap {
   background-color: whitesmoke;
 }
 
+p.app-info {
+  font-size: x-small;
+}
+
 .category-container {
   /* Grid表示する */
   display: grid;

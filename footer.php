@@ -2,7 +2,7 @@
 <!-- フッター -->
 <!------------------------------------------------>
 <footer class="site-footer">
-  <p class="copyright">&copy; 2021 OUNI studio.</p>
+  <p class="copyright">&copy; 2021 OUNI</p>
 </footer>
 
 <!-- wp_footer は </body> 直前に書く。 -->
