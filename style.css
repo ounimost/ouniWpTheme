@@ -126,12 +126,12 @@ p.app-info {
 .category-container {
   /* Grid表示する */
   display: grid;
-  grid-gap: 50px;
-  margin: 50px 0px;
+  grid-gap: 25px;
+  margin: 25px 0px;
 }
 @media (min-width: 600px) {
   .category-container {
-    grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 @media (max-width: 599px) {
@@ -156,11 +156,11 @@ p.app-info {
 }
 a.category-post-title {
   color: dimgray;
-  font-size: small;
-  font-weight: 700;
-  transition: color 0.5s;
+  font-size: x-small;
+  font-weight: 500;
+  transition: color 0.25s;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 a.category-post-title:hover {
   color: silver;
@@ -219,6 +219,13 @@ h2.top-header {
   letter-spacing: 4px;
   color: dimgray;
 }
+h3.top-header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: dimgray;
+}
 /* 記事のタイトル */
 h3.new-post-header {
   margin: 10px;
@@ -227,7 +234,7 @@ h3.new-post-header > a {
   color: dimgray;
   font-size: small;
   font-weight: 700;
-  transition: color 0.5s;
+  transition: color 0.25s;
   text-decoration: none;
   display: inline-block;
 }
@@ -240,7 +247,7 @@ p.new-post-info {
   margin: 10px;
 }
 .new-post-category > a {
-  transition: color 0.5s;
+  transition: color 0.25s;
   text-decoration: none;
   color: dimgray;
   margin-right: 10px;
@@ -363,7 +370,7 @@ ul.page-numbers > li > a {
   color: gray;
   display: block;
   padding: 0.5rem 1rem;
-  transition: color 0.2s;
+  transition: color 0.25s;
   margin: 0px 5px;
   border-radius: 50px;
   box-shadow: 3px 3px 5px #bebebe;
@@ -377,7 +384,7 @@ span.page-numbers {
   color: gray;
   display: block;
   padding: 0.5rem 1rem;
-  transition: color 0.2s;
+  transition: color 0.25s;
   margin: 0px 5px;
   border-radius: 50px;
 }
@@ -445,7 +452,7 @@ li.nav-item > a {
   letter-spacing: 1.5px;
   color: dimgray;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.25s;
   margin: 0px 5px;
 
   border-radius: 50px;

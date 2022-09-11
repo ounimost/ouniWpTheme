@@ -113,29 +113,30 @@
     <div class="category-container">
 
     <div class="category">
-        <h2 class="top-header">React</h2>
+        <h3 class="top-header">React</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/react.png" />
           <?php
                 $newarrival = get_posts(array(
                     'posts_per_page' => 6, 		// 表示件数指定
-                    'category' => 22 					// カテゴリID指定
+                    'category' => 1 					// カテゴリID指定
                 ));
             ?>
 			    <dl class="category-post-list">
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/unity'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/unity'); ?>">show more</a></div>
         </div>	
       </div>
 
       <div class="category">
-        <h2 class="top-header">Unity</h2>
+        <h3 class="top-header">Unity</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/unity.jpg" />
           <?php
@@ -148,16 +149,17 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/unity'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/unity'); ?>">show more</a></div>
         </div>	
       </div>
 
       <div class="category">
-        <h2 class="top-header">WordPress</h2>
+        <h3 class="top-header">WordPress</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/wordpress.jpg" />
           <?php
@@ -170,16 +172,17 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/wordpress'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/wordpress'); ?>">show more</a></div>
         </div>
       </div>
 
       <div class="category">
-        <h2 class="top-header">eagle</h2>
+        <h3 class="top-header">eagle</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/eagle.png" />
           <?php
@@ -192,17 +195,18 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/wordpress'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/wordpress'); ?>">show more</a></div>
         </div>
       </div>
 
 
       <div class="category">
-        <h2 class="top-header">ポートフォリオサイトのつくりかた</h2>
+        <h3 class="top-header">ポートフォリオサイト</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio.jpg" />
           <?php
@@ -215,17 +219,18 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/portfolio'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/portfolio'); ?>">show more</a></div>
         </div>
       </div>
 
 
       <div class="category">
-        <h2 class="top-header">読書</h2>
+        <h3 class="top-header">読書</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/book.jpg" />
           <?php
@@ -238,17 +243,18 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/reading'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/reading'); ?>">show more</a></div>
         </div>
       </div>
 
 
       <div class="category">
-        <h2 class="top-header">エッセイ</h2>
+        <h3 class="top-header">エッセイ</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/essey.jpg" />
           <?php
@@ -261,16 +267,17 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/essay'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/essay'); ?>">show more</a></div>
         </div>
       </div>
 
       <div class="category">
-        <h2 class="top-header">ガジェット</h2>
+        <h3 class="top-header">ガジェット</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/gadgets.jpg" />
           <?php
@@ -283,11 +290,12 @@
             <?php foreach ($newarrival as $post): setup_postdata($newarrival);?>
               <p class="new-post-info">
                 <time class="category-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <br />
                 <a class="category-post-title" href="<?php echo get_permalink(); ?>"><?php echo $post->post_title; ?></a>
               </p>
             <?php endforeach; ?>
           </dl>
-          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/gadget'); ?>">ほかの記事</a></div>
+          <div class="center-btn"><a class="btn" href="<?php echo home_url('/blog/category/gadget'); ?>">show more</a></div>
         </div>
       </div>
     </div>
