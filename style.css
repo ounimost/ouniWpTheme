@@ -175,8 +175,16 @@ a.category-post-title:hover {
   margin-left: auto;
   background-color: whitesmoke;
 }
-.content-single {
-  padding: 20px 10%;
+
+@media (min-width: 600px) {
+  .content-single {
+    padding: 20px 10%;
+  }
+}
+@media (max-width: 599px) {
+  .content-single {
+    padding: 20px 5%;
+  }
 }
 .img-post {
   max-width: 100%;
