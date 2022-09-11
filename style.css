@@ -191,8 +191,15 @@ a.category-post-title:hover {
 /*---------------------------------------------------
   投稿一覧
 -----------------------------------------------------*/
-.content-area {
-  padding: 20px 4%;
+@media (min-width: 600px) {
+  .content-area {
+    padding: 20px 4%;
+  }
+}
+@media (max-width: 599px) {
+  .content-area {
+    padding: 20px 8%;
+  }
 }
 .new-post-container {
   /* Grid表示する */
@@ -201,7 +208,6 @@ a.category-post-title:hover {
   grid-gap: 30px;
 }
 .new-post {
-  max-width: 250px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
@@ -211,6 +217,11 @@ a.category-post-title:hover {
 }
 .new-post:hover {
   box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
+}
+.new-post > a > img.post-img.wp-post-image {
+  /* width: 100%; */
+  height: auto;
+  max-width: 100%;
 }
 h2.top-header {
   text-align: center;

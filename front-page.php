@@ -10,7 +10,7 @@
   <!------------------------------------------------>
   <div class="content-area">
     <h2 class="top-header">WORKS</h2>
-    <div class="new-post-container">
+    <div class="category-container">
 
         <div class="new-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-site.png" />
@@ -83,7 +83,7 @@
 
           <!-- サムネイル画像を表示する -->
           <a href="<?php echo get_permalink(); ?>">
-            <?php the_post_thumbnail( array( 250, 200 ), array( 'class' => 'post-img' ) ); ?>
+            <?php the_post_thumbnail( "thumnail", array( 'class' => 'post-img' ) ); ?>
           </a>
 
           <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
