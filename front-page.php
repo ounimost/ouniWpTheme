@@ -110,8 +110,8 @@
   <!-- カテゴリごとの記事一覧 -->
   <!------------------------------------------------>
   <div class="content-area">
+  <h2 class="top-header">CATEGORIES</h2>
     <div class="category-container">
-
     <div class="category">
         <h3 class="top-header">React</h3>
         <div class="category-post">
