@@ -119,7 +119,7 @@
           <?php
                 $newarrival = get_posts(array(
                     'posts_per_page' => 6, 		// 表示件数指定
-                    'category' => 1 					// カテゴリID指定
+                    'category' => 22 					// カテゴリID指定
                 ));
             ?>
 			    <dl class="category-post-list">
