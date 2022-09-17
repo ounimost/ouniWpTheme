@@ -25,7 +25,7 @@
         <!-- 投稿を表示 -->
         <div class="new-post">
           <a href="<?php echo get_permalink(); ?>">
-            <?php the_post_thumbnail( array( 250, 200 ), array( 'class' => 'new-post-img' ) ); ?>
+            <?php the_post_thumbnail( "thumnail", array( 'class' => 'post-img' ) ); ?>
           </a>
           <h3 class="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
           <p class="new-post-info">

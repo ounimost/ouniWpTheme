@@ -254,7 +254,7 @@
 
 
       <div class="category">
-        <h3 class="top-header">エッセイ</h3>
+        <h3 class="top-header">雑記</h3>
         <div class="category-post">
           <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/essey.jpg" />
           <?php
