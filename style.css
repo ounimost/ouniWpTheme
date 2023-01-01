@@ -76,6 +76,13 @@ textarea {
 div.postContent > p > strong {
   background: linear-gradient(transparent 60%, #ffffa8 0%);
 }
+strong {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5em;
+  text-decoration-color: rgba(255, 228, 0, 0.4);
+  text-underline-offset: -0.2em;
+  text-decoration-skip-ink: none;
+}
 /* 引用 */
 .wp-block-quote {
   color: dimgray;
