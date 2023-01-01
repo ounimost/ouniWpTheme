@@ -11,28 +11,15 @@
   <div class="content-area">
     <h2 class="top-header">WORKS</h2>
     <div class="category-container">
-
         <div class="new-post">
-          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-site.png" />
-          <h3 class="new-post-header"><a href="<?php echo home_url('/works/portfolio'); ?>">ポートフォリオサイト</a></h3>
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/lognote-app.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/lognote'); ?>">LogNote</a></h3>
           <p class="new-post-info">
-            <time class="new-post-date" datetime="2021-06-05">2021-06-05</time>
+            <time class="new-post-date" datetime="2022-09-30">2022-09-30</time>
             <br />
-            <span class="new-post-category">３時間で作れる簡単なポートフォリオサイトです。作りかたの記事も掲載しています。</span>
+            <span class="new-post-category">Reactで作成した日々のログを管理するアプリです。Googleアカウントで認証して、ログを保存・編集・削除できます。</span>
             <br />
-            <time class="new-post-date">HTML/CSS/Bootstrap</time>
-          </p>
-        </div>
-
-        <div class="new-post">
-          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/ouni-wptheme.png" />
-          <h3 class="new-post-header"><a href="<?php echo home_url('/works/wptheme'); ?>">OUNI WordPressテーマ</a></h3>
-          <p class="new-post-info">
-            <time class="new-post-date" datetime="2021-10-22">2021-10-22</time>
-            <br />
-            <span class="new-post-category">このサイトで利用しているオリジナルのWordPressテーマです。作りかたの記事も掲載しています。</span>
-            <br />
-            <time class="new-post-date">WordPress/php/css</time>
+            <time class="new-post-date">React/TypeScript/Tailwind/Firebase</time>
           </p>
         </div>
 
@@ -49,14 +36,25 @@
         </div>
 
         <div class="new-post">
-          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/lognote-app.png" />
-          <h3 class="new-post-header"><a href="<?php echo home_url('/works/lognote'); ?>">LogNote</a></h3>
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/ouni-wptheme.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/wptheme'); ?>">OUNI WordPressテーマ</a></h3>
           <p class="new-post-info">
-            <time class="new-post-date" datetime="2022-09-30">2022-09-30</time>
+            <time class="new-post-date" datetime="2021-10-22">2021-10-22</time>
             <br />
-            <span class="new-post-category">Reactで作成した日々のログを管理するアプリです。Googleアカウントで認証して、ログを保存・編集・削除できます。</span>
+            <span class="new-post-category">このサイトで利用しているオリジナルのWordPressテーマです。作りかたの記事も掲載しています。</span>
             <br />
-            <time class="new-post-date">React/TypeScript/Tailwind/Firebase</time>
+            <time class="new-post-date">WordPress/php/css</time>
+          </p>
+        </div>
+        <div class="new-post">
+          <img class="category-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-site.png" />
+          <h3 class="new-post-header"><a href="<?php echo home_url('/works/portfolio'); ?>">ポートフォリオサイト</a></h3>
+          <p class="new-post-info">
+            <time class="new-post-date" datetime="2021-06-05">2021-06-05</time>
+            <br />
+            <span class="new-post-category">３時間で作れる簡単なポートフォリオサイトです。作りかたの記事も掲載しています。</span>
+            <br />
+            <time class="new-post-date">HTML/CSS/Bootstrap</time>
           </p>
         </div>
     </div>
