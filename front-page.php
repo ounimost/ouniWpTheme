@@ -18,7 +18,7 @@
           <p class="new-post-info">
             <time class="new-post-date" datetime="2021-06-05">2021-06-05</time>
             <br />
-            <span class="new-post-category">簡単なポートフォリオサイトです。作成方法の解説ブログも書いています。</span>
+            <span class="new-post-category">３時間で作れる簡単なポートフォリオサイトです。作りかたの記事も掲載しています。</span>
             <br />
             <time class="new-post-date">HTML/CSS/Bootstrap</time>
           </p>
@@ -30,7 +30,7 @@
           <p class="new-post-info">
             <time class="new-post-date" datetime="2021-10-22">2021-10-22</time>
             <br />
-            <span class="new-post-category">このOUNIサイトでも利用しているWordPressテーマです。作成方法の解説ブログも書いています。</span>
+            <span class="new-post-category">このサイトで利用しているオリジナルのWordPressテーマです。作りかたの記事も掲載しています。</span>
             <br />
             <time class="new-post-date">WordPress/php/css</time>
           </p>
@@ -42,7 +42,7 @@
           <p class="new-post-info">
             <time class="new-post-date" datetime="2022-07-21">2022-07-21</time>
             <br />
-            <span class="new-post-category">TOEIC学習アプリです。TOEICの単語テストと出題文の翻訳テストができます。</span>
+            <span class="new-post-category">Reactで作成したTOEIC学習アプリです。TOEICの単語テストと出題文の翻訳テストができます。</span>
             <br />
             <time class="new-post-date">React/Tailwind</time>
           </p>
@@ -54,7 +54,7 @@
           <p class="new-post-info">
             <time class="new-post-date" datetime="2022-09-30">2022-09-30</time>
             <br />
-            <span class="new-post-category">日々のログを管理するアプリです。Googleアカウントで認証すれば、日々のログを保存・編集・閲覧ができます。</span>
+            <span class="new-post-category">Reactで作成した日々のログを管理するアプリです。Googleアカウントで認証して、ログを保存・編集・削除できます。</span>
             <br />
             <time class="new-post-date">React/TypeScript/Tailwind/Firebase</time>
           </p>
