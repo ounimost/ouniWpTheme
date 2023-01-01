@@ -27,7 +27,7 @@
 	  $thumb_id = get_post_thumbnail_id($my_id);
 	  $thumb_url = wp_get_attachment_image_src($thumb_id,'full');
     $thumb_url_path = "";
-    if ( $thumb_url && is_array($thumb_url) && empty($thumb_url)) {
+    if ( is_array($thumb_url) && empty($thumb_url)) {
       $thumb_url_path = $thumb_url_path[0];
     }
 	  $my_card_summary = str_replace(array("\r", "\n"), '', mb_substr(strip_tags($my_post), 0,150,'UTF-8'));
