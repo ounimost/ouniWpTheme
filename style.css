@@ -76,7 +76,8 @@ textarea {
 div.postContent > p > strong {
   background: linear-gradient(transparent 60%, #ffffa8 0%);
 }
-strong {
+strong,
+b {
   text-decoration: underline;
   text-decoration-thickness: 0.5em;
   text-decoration-color: rgba(255, 228, 0, 0.4);
