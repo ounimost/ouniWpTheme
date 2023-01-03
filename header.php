@@ -37,16 +37,14 @@
 	  $my_post = wp_get_single_post($my_id)->post_content;
 	  $thumb_id = get_post_thumbnail_id($my_id);
 	  $thumb_url = wp_get_attachment_image_src($thumb_id,'full');
-    $thumb_url_path = $thumb_url_path[0];
-    //if ( is_array($thumb_url) && empty($thumb_url)) {
-    //  $thumb_url_path = $thumb_url_path[0];
-    //}
 	  $my_card_summary = str_replace(array("\r", "\n"), '', mb_substr(strip_tags($my_post), 0,150,'UTF-8'));
 	?>
 	<meta property="og:url" content="<?php echo get_permalink($my_id); ?>">
 	<meta property="og:title" content="<?php single_post_title(); ?>">
 	<meta property="og:description" content="<?php echo $my_card_summary; ?>">
-	<meta property="og:image" content="<?php echo $thumb_url_path; ?>">
+  <?php if ( empty($thumb_url) == false ) { ?>
+    <meta property="og:image" content="<?php echo $thumb_url[0]; ?>">
+  <?php } ?>
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@ounimost">
   
