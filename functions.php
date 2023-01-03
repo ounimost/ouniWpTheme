@@ -9,9 +9,7 @@ function custom_theme_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
 
-/**
- * 投稿のアーカイブページを設定
- */
+// 投稿のアーカイブページを設定
 function post_has_archive( $args, $post_type ) {
   if ('post' == $post_type) {
       global $wp_rewrite;
@@ -28,3 +26,9 @@ function post_has_archive( $args, $post_type ) {
   return $args;
 }
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+
+// 固定ページで「抜粋」を有効化
+add_post_type_support('page', 'excerpt');
+
+// カテゴリーとタグのmeta descriptionからpタグを除去
+remove_filter('term_description','wpautop');

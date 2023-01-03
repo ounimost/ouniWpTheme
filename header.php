@@ -4,7 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OUNI</title>
+  <title><?php bloginfo('name'); ?></title>
+
+  <!-- Meta Description -->
+  <?php if( is_home() || is_front_page() ): ?>
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+  <?php elseif( is_category() ): ?>
+    <meta name="description" content="<?php echo category_description(); ?>">
+  <?php elseif( is_tag() ): ?>
+    <meta name="description" content="<?php echo tag_description(); ?>">
+  <?php elseif( is_singular() ): ?>
+    <meta name="description" content="<?php echo get_the_excerpt(); ?>">
+  <?php endif; ?>
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
@@ -20,16 +31,16 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-  	<!-- Twitter card -->
+  <!-- Twitter card -->
 	<?php
 	  $my_id = get_queried_object_id();
 	  $my_post = wp_get_single_post($my_id)->post_content;
 	  $thumb_id = get_post_thumbnail_id($my_id);
 	  $thumb_url = wp_get_attachment_image_src($thumb_id,'full');
-    $thumb_url_path = "";
-    if ( is_array($thumb_url) && empty($thumb_url)) {
-      $thumb_url_path = $thumb_url_path[0];
-    }
+    $thumb_url_path = $thumb_url_path[0];
+    //if ( is_array($thumb_url) && empty($thumb_url)) {
+    //  $thumb_url_path = $thumb_url_path[0];
+    //}
 	  $my_card_summary = str_replace(array("\r", "\n"), '', mb_substr(strip_tags($my_post), 0,150,'UTF-8'));
 	?>
 	<meta property="og:url" content="<?php echo get_permalink($my_id); ?>">
